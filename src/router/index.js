@@ -166,19 +166,20 @@ let addRouter = [
         children: []
       },
       {
-        path: '/codeAppiumParallelTest',
-        iconCls: 'el-icon-edit-outline',
-        name: routeNmae.appiumTest, // Appium自动化测试框架
-        component: codeAppiumParallelTest,
-        children: []
-      },
-      {
         path: '/codeAppiumUITest',
         iconCls: 'el-icon-edit-outline',
-        name: routeNmae.appiumParallelTest, // Appium自动化测试框架
+        name: routeNmae.appiumTest, // Appium自动化测试框架
         component: codeAppiumUITest,
         children: []
       },
+      {
+        path: '/codeAppiumParallelTest',
+        iconCls: 'el-icon-edit-outline',
+        name: routeNmae.appiumParallelTest, // Appium自动化测试框架
+        component: codeAppiumParallelTest,
+        children: []
+      },
+      
       {
         path: '/codeMaximMonkey',
         iconCls: 'el-icon-edit-outline',

@@ -31,33 +31,12 @@ export default{
               self.html = '加载失败';
               })
         }
-        // const Http = new  XMLHttpRequest();
-        // Http.open("GET", url);
-        // Http.send();
-        // Http.onreadystatechange = (e)=>{
-        //   if(Http.readyState == 4 && Http.status == 200) {
-                
-        //   const self = this;
-        //   this.html = Http.responseText;
-        //   console.log(Http.responseText);
-        //     }
-        // }
       },
       // 也可以通过 params 对象传递参数
       getuser(){
         window.setTimeout("window.open('http://192.168.222.130:9000/projects')", 2000); 
         // window.open('http://192.168.222.130:9000/projects');
-　//self.href = 'http://192.168.222.128:8081/';
-
-// this.axios.get('http://192.168.222.128:8081/', {
-// })
-// .then(function (response) {
-// console.log(response);
-// })
-// .catch(function (error) {
-// console.log(error);
-// });
-}
+      }
     },
     mounted() {
     //this.requestData("http://192.168.222.128:8081/");

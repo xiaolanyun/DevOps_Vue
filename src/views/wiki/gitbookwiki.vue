@@ -8,7 +8,7 @@ export default {
   data () {
     return {
       multipleSelection: [],
-      url:""//知识沉淀
+      url:"https://xiaolanyun.github.io/DevOps_wiki/"//知识沉淀
     }
   },
   methods: {
