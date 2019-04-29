@@ -2,7 +2,10 @@
 <el-card class="box-card">
   <div slot="header" class="clearfix">
     <span><font size="2">Appium自动化测试框架</font></span>
+    <el-button style="float: right; padding: 3px 0" type="text" @click="getmp4">视频展示</el-button>
+    <br>
     <el-button style="float: right; padding: 3px 0" type="text" @click="getuser">框架下载</el-button>
+    
   </div>
   <font size="2">1、Appium图解</font>
   <p><img v-bind:Src="imgSrc1" height="300" width="700px"/></p>
@@ -117,21 +120,22 @@
       <br>
       <font size="2">5、框架快速上手</font>
       <p>本地编写测试用例，首先需要配置好环境。</p>
-      <p>编写示例：以登陆界面为例</p>
+      <p>1、编写示例：以登陆界面为例</p>
       <p>pages包下建立LoginPage.java，定义界面元素，格式参见框架源码相应文件。</p>
     
       <p>pagesHelper包下建立LoginPageHelper.java,封装对登陆界面元素操作的方法，其操作函数调用的是Utils包下封装的appium函数，格式参见框架源码相应文件。</p>
     
       <p>testCase包下建Login包，Login包下建立LoginPage_001_UICheckForLogin_Test.java，是测试用例，调用pagesHelper包下的LoginPageHelper.java中封装的操作方法，编写测试逻辑，格式参见框架源码相应文件。</p>
       <p>命名规范：</p>
-      <p>1、操作页面，LoginPage，必须带有Page字段</p>
-      <p>2、用例编号，001，输出测试报告时进行读取，必须设置</p>
-      <p>3、测试用例描述，UICheckForLogin</p>
-      <p>4、文件作用，Test</p>
+      <p style="text-indent:4em;">1、操作页面，LoginPage，必须带有Page字段</p>
+      <p style="text-indent:4em;">2、用例编号，001，输出测试报告时进行读取，必须设置</p>
+      <p style="text-indent:4em;">3、测试用例描述，UICheckForLogin</p>
+      <p style="text-indent:4em;">4、文件作用，Test</p>
   
-      <p>在testng.xml中配置appium和手机相关参数，配置需要运行的测试用例，格式参见源码相应文件。</p>
+      <p>2、在testng.xml中配置appium和手机相关参数，配置需要运行的测试用例，格式参见源码相应文件。</p>
       
-      <p>在pom.xml中配置需要运行的testng.xml文件，格式参见框架源码相应文件。</p>
+      <p>3、在pom.xml中配置需要运行的testng.xml文件，jenkins定时测试需要读取。格式参见框架源码相应文件。</p>
+      <p>4、本地运行：在相应testng.xml上右键，run as->TestNG suit</p>
      
       <br>
       <font size="2">6、好处</font>
@@ -171,6 +175,9 @@ export default
     },
     getuser(){
         window.setTimeout("window.open('https://gitee.com/xiaolanyun/DevOps_AppiumTest')", 1000); 
+    },
+    getmp4(){
+      window.setTimeout("window.open('https://gitee.com/xiaolanyun/DevOps_AppiumTestMp4')",1000);
     }
   },
   // mounted() {

@@ -2,16 +2,19 @@
        <el-card class="box-card">
   <div slot="header" class="clearfix">
     <span><font size="2">Maxim_Monkey框架</font></span>
+    <el-button style="float: right; padding: 3px 0" type="text" @click="getmp4">视频展示</el-button>
+    <br>
     <el-button style="float: right; padding: 3px 0" type="text" @click="getusers">框架下载</el-button>
   </div>
   <div class="text item">
-      <font size="2">1、手动使用</font>
-      <pre><code>adb push framework.jar /sdcard/01test
+      <font size="2">1、本地使用</font>
+      <pre><code>
+      adb push framework.jar /sdcard/01test
 
       adb push monkey.jar /sdcard/01test
 
       adb push max.config /sdcard/01test
-      </code></pre><p>普通测试;</p>
+      </code></pre><p>普通测试：</p>
       <pre><code>adb shell CLASSPATH=/sdcard/01test/monkey.jar:/sdcard/01test/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p
       com.example.xiaolanyun.ldmart --uiautomatormix --running-minutes 1 -v -v
       </code></pre><p>增加截图功能：</p>
@@ -21,13 +24,13 @@
       max.takeScreenShot= true   开启截图
 
       max.savePageSource  保存xml
-      </code></pre><p>截图的生效条件 </p>
+      </code></pre><p>截图的生效条件：</p>
       <p>throttle &gt; 200  &amp;&amp;  max.takeScreenShot= true</p>
-      <pre><code>adb shell CLASSPATH=/sdcard/01test/monkey.jar:/sdcard/01test/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey
-      -p com.example.xiaolanyun.ldmart --uiautomatormix --running-minutes 2 -v -v
-      --throttle 400 --output-directory /sdcard/01test/screenshot
+      <p>带截图测试：</p>
+      <pre><code>adb shell CLASSPATH=/sdcard/01test/monkey.jar:/sdcard/01test/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p 
+        com.example.xiaolanyun.ldmart --uiautomatormix --running-minutes 2 -v -v --throttle 400 --output-directory /sdcard/01test/screenshot
       </code></pre>
-      <font size="2">2、模式选择：</font>
+      <font size="2">2、模式选择</font>
       <p>1、模式 DFS
         --uiautomatordfs</p>
       <p>  增加深度遍历算法</p>
@@ -43,7 +46,7 @@
       <p>  --uiautomatortroy</p>
       <p>  控件选择策略按max.xpath.selector配置的高低优先级来进行深度遍历</p>
       <br>
-      <font size="2">3、monkey_shell.sh</font>
+      <font size="2">3、jenkins脚本配置的monkey_shell.sh</font>
             <pre><code>#!/bin/bash
       source /etc/profile
       echo 正在创建截图保存文件夹
@@ -86,6 +89,9 @@ export default {
     },
     getusers(){
       window.setTimeout("window.open('https://gitee.com/xiaolanyun/DevOps_Monkey')", 1000);
+    },
+    getmp4(){
+      window.setTimeout("windos.open('')",1000);
     }
   }
 }

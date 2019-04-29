@@ -2,12 +2,15 @@
   <el-card class="box-card">
   <div slot="header" class="clearfix">
     <span><font size="2">并行测试框架</font></span>
+    <el-button style="float: right; padding: 3px 0" type="text" @click="getmp4">视频展示</el-button>
+    <br>
     <el-button style="float: right; padding: 3px 0" type="text" @click="getusers">框架下载</el-button>
+    
   </div>
   <div class="text item">
       <font size="2">1、改进思路</font>
       <p>对Appium测试框架进一步改进，使其实现并行测试，由于物理机资源有限，暂时只进行两台安卓设备并行测试。</p>
-      <p>对BasePerpare.java进行修改，增加设备udid的获取与自动设置。</p>
+      <p>对SelectDriver.java进行修改，增加设备udid的获取与自动设置。</p>
       <p>以selenium-server-standalone为支撑，由selenium-grid分配测试。</p>
       <p>利用testng进行xml传参，设置测试用例执行机的udid，实现并行测试。</p>
    
@@ -166,9 +169,11 @@
           &lt;/test&gt;
       </code></pre>
       <font size="2">4.2、测试用例编写顺序，格式参照Appium测试框架。</font><br>
-      <p><br></p>
       <font size="2">4.3、增加测试设备</font>
-      <p>相应的按照格式增加nodeconfig配置文件，按照格式编写Appium启动脚本，增加Appium面版服务配置，进行testng.xml中的测试用例设备udid分配。</p>
+      <p>按照格式相应的增加nodeconfig配置文件，按照格式编写Appium启动脚本，增加Appium面版服务配置，进行testng.xml中的测试用例设备udid分配。</p>
+      <font size="2">4.4、本地运行</font>
+        <p>在相应testng.xml上右键，run as->TestNG suit</p>
+      
       <br>
       <font size="2">5、好处</font>
       <p>多机器并行测试提高测试效率</p>
@@ -203,6 +208,9 @@ export default {
     },
     getusers(){
       window.setTimeout("window.open('https://gitee.com/xiaolanyun/DevOps_AppiumParallelTest')", 1000);
+    },
+    getmp4(){
+      window.setTimeout("windos.open('https://gitee.com/xiaolanyun/DevOps_AppiumParallelTestMp4')",);
     }
   }
 }
