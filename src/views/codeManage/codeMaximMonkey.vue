@@ -2,13 +2,14 @@
        <el-card class="box-card">
   <div slot="header" class="clearfix">
     <span><font size="2">Maxim_Monkey框架</font></span>
-    <el-button style="float: right; padding: 3px 0" type="text" @click="getmp4">视频展示</el-button>
+    <el-button style="float: right; padding: 3px 0" type="text" @click="getmp4">运行展示</el-button>
     <br>
     <el-button style="float: right; padding: 3px 0" type="text" @click="getusers">框架下载</el-button>
   </div>
   <div class="text item">
-      <font size="2">1、本地使用</font>
-      <pre><code>
+      <font size="2">1、设计思路</font>
+      <p><img v-bind:Src="imgSrc1" height="382" width="1206px"/></p>
+      <!-- <pre><code>
       adb push framework.jar /sdcard/01test
 
       adb push monkey.jar /sdcard/01test
@@ -59,7 +60,7 @@
       echo 正在打包截图
       tar -zcvf ${BUILD_NUMBER}_${JOB_NAME}_screenshot.tar.gz ./${BUILD_NUMBER}_${JOB_NAME}_result
       echo 打包已经完成，请您配合日志查看！
-      </code></pre>
+      </code></pre> -->
 
   </div>
 </el-card>
@@ -71,7 +72,8 @@ export default {
   data () {
     return {
       multipleSelection: [],
-      url:"https://gitee.com/xiaolanyun/DevOps_Monkey"//monkey
+      url:"https://gitee.com/xiaolanyun/DevOps_Monkey",//monkey
+      imgSrc1:"./static/images/Maxim_monkey设计思路.PNG",
     }
   },
   methods: {
@@ -91,7 +93,8 @@ export default {
       window.setTimeout("window.open('https://gitee.com/xiaolanyun/DevOps_Monkey')", 1000);
     },
     getmp4(){
-      window.setTimeout("windos.open('')",1000);
+      window.setTimeout("window.open('https://www.bilibili.com/video/av50838305/?p=7')",1000);
+      window.setTimeout("window.open('https://www.bilibili.com/video/av50838305/?p=6')",1000);
     }
   }
 }

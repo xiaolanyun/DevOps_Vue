@@ -2,17 +2,16 @@
 <el-card class="box-card">
   <div slot="header" class="clearfix">
     <span><font size="2">Appium自动化测试框架</font></span>
-    <el-button style="float: right; padding: 3px 0" type="text" @click="getmp4">视频展示</el-button>
-    <br>
-    <el-button style="float: right; padding: 3px 0" type="text" @click="getuser">框架下载</el-button>
-    
+    <el-button style="float: right; padding: 3px 0" type="text" @click="getmp4">运行展示</el-button>
+ <br>
+    <el-button style="float: right; padding: 3px 0" type="text" @click="getuser">框架下载</el-button>   
   </div>
-  <font size="2">1、Appium图解</font>
-  <p><img v-bind:Src="imgSrc1" height="300" width="700px"/></p>
+  <font size="2">1、框架设计思路</font>
+  <p><img v-bind:Src="imgSrc1" height="534" width="1150px"/></p>
   <br>
-  <font size="2">2、设计思路</font>
-  <p><img v-bind:Src="imgSrc2" height="400" width="700px"/></p>
-  <br>
+  <font size="2">2、工程讲解</font>
+  <p><img v-bind:Src="imgSrc2" height="731" width="604px"/></p>
+  <!-- <br>
   <font size="2">3、框架展示</font>
   <p><img v-bind:Src="imgSrc3" height="1200" width="500px"/></p>
   <br>
@@ -140,7 +139,7 @@
       <br>
       <font size="2">6、好处</font>
       <p>在pagesHelper包下的界面操作方法封装使得编写测试用例时，测试逻辑容易编写，在长期项目中，封装的界面操作方法复用性极高，不同的组合即可形成新的测试逻辑。</p>
-  </div>
+  </div> -->
 </el-card>
       
 </template>
@@ -153,9 +152,9 @@ export default
     return {
       multipleSelection: [],
       url:"https://gitee.com/xiaolanyun/DevOps_AppiumTest",//Appium测试框架
-      imgSrc1:'./static/images/Appium.png',
-      imgSrc2:'./static/images/AppiumDesign.png',
-      imgSrc3:'./static/images/AppiumProject.png',
+      imgSrc1:'./static/images/appium_design.PNG',
+      imgSrc2:'./static/images/DevOps_AppiumTest.PNG',
+      // imgSrc3:'./static/images/AppiumProject.png',
     }
   },
   methods: 
@@ -177,7 +176,8 @@ export default
         window.setTimeout("window.open('https://gitee.com/xiaolanyun/DevOps_AppiumTest')", 1000); 
     },
     getmp4(){
-      window.setTimeout("window.open('https://gitee.com/xiaolanyun/DevOps_AppiumTestMp4')",1000);
+      window.setTimeout("window.open('https://www.bilibili.com/video/av50838305?pop_share=1')",1000);
+      window.setTimeout("window.open('https://www.bilibili.com/video/av50838305/?p=2')",1000);
     }
   },
   // mounted() {

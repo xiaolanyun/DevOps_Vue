@@ -2,21 +2,23 @@
   <el-card class="box-card">
   <div slot="header" class="clearfix">
     <span><font size="2">并行测试框架</font></span>
-    <el-button style="float: right; padding: 3px 0" type="text" @click="getmp4">视频展示</el-button>
+    <el-button style="float: right; padding: 3px 0" type="text" @click="getmp4">运行展示</el-button>
     <br>
     <el-button style="float: right; padding: 3px 0" type="text" @click="getusers">框架下载</el-button>
     
   </div>
   <div class="text item">
-      <font size="2">1、改进思路</font>
-      <p>对Appium测试框架进一步改进，使其实现并行测试，由于物理机资源有限，暂时只进行两台安卓设备并行测试。</p>
+      <font size="2">1、设计思路</font>
+      <p><img v-bind:Src="imgSrc1" height="503" width="1217px"></p>
+      <!-- <p>对Appium测试框架进一步改进，使其实现并行测试，由于物理机资源有限，暂时只进行两台安卓设备并行测试。</p>
       <p>对SelectDriver.java进行修改，增加设备udid的获取与自动设置。</p>
       <p>以selenium-server-standalone为支撑，由selenium-grid分配测试。</p>
       <p>利用testng进行xml传参，设置测试用例执行机的udid，实现并行测试。</p>
-   
+    -->
       <br>
-      <font size="2">2、windos下并行测试bat脚本编写</font>
-      <p>运行顺序Grid-》appiumA,appiumB</p>
+      <font size="2">2、工程讲解</font>
+      <p><img v-bind:Src="imgSrc2" height="862" width="808px"/></p>
+      <!-- <p>运行顺序Grid-》appiumA,appiumB</p>
       <p><img v-bind:src="imgSrc1" alt=""></p>
       <font size="2">2.1、启动AppiumGrid服务</font>
       <pre><code>@echo off
@@ -176,8 +178,8 @@
       
       <br>
       <font size="2">5、好处</font>
-      <p>多机器并行测试提高测试效率</p>
-  </div>
+      <p>多机器并行测试提高测试效率</p>-->
+  </div> 
 </el-card>
 </template>
 
@@ -188,9 +190,9 @@ export default {
     return {
       multipleSelection: [],
       url:"https://gitee.com/xiaolanyun/DevOps_AppiumParallelTest",//Appium多机器并行测试框架
-      imgSrc1:'./static/images/11.5.0.PNG',
-      imgSrc2:'./static/images/11.5.1.PNG',
-      imgSrc3:'./static/images/11.5.2.PNG'
+      imgSrc1:'./static/images/并行测试框架思路.PNG',
+      imgSrc2:'./static/images/DevOps_AppiumParallelTest.PNG',
+      // imgSrc3:'./static/images/11.5.2.PNG'
     }
   },
   methods: {
@@ -210,8 +212,10 @@ export default {
       window.setTimeout("window.open('https://gitee.com/xiaolanyun/DevOps_AppiumParallelTest')", 1000);
     },
     getmp4(){
-      window.setTimeout("windos.open('https://gitee.com/xiaolanyun/DevOps_AppiumParallelTestMp4')",);
+      window.setTimeout("window.open('https://www.bilibili.com/video/av50838305/?p=3')",1000);
+      window.setTimeout("window.open('https://www.bilibili.com/video/av50838305/?p=4')",1000);
     }
+    
   }
 }
 </script>

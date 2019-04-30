@@ -5,8 +5,9 @@
     <el-button style="float: right; padding: 3px 0" type="text" @click="getusers">示例下载</el-button>
   </div>
   <div class="text item">
-        <font size="2">1、postman接口测试及导出请参考Wiki</font>
-        <p><br></p>
+        <font size="2">1、接口测试设计思路</font>
+        <p><img v-bind:Src="imgSrc1" height="362" width="988px"/></p>
+        <!-- <p><br></p>
         <font size="2">2、newman执行脚本并生成报告</font>
         <p>输入newman查看可使用命令参数。</p>
         <p>可生成测试报告类型：json,junit的xml，html.</p>
@@ -24,7 +25,7 @@
         echo 报告已经生成，正在打包......
         tar -zcvf ${BUILD_NUMBER}_${JOB_NAME}_report.tar.gz ./newman
         echo 请您查看邮件或者jenkins构建日志输出台！
-        </code></pre>
+        </code></pre> -->
   </div>
 </el-card>
 </template>
@@ -35,7 +36,8 @@ export default {
   data () {
     return {
       multipleSelection: [],
-      url:"https://gitee.com/xiaolanyun/DevOps_ApiTest"//手机号码api测试
+      url:"https://gitee.com/xiaolanyun/DevOps_ApiTest",//手机号码api测试
+      imgSrc1:"./static/images/接口测试思路.PNG",
     }
   },
   methods: {
