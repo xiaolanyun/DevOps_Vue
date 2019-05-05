@@ -7,6 +7,8 @@
   <div class="text item">
         <font size="2">1、接口测试设计思路</font>
         <p><img v-bind:Src="imgSrc1" height="362" width="988px"/></p>
+        <br>
+        <font color="#5CACEE" size="2" @click="getwiki">2、接口自动化测试使用请查看wiki</font>
         <!-- <p><br></p>
         <font size="2">2、newman执行脚本并生成报告</font>
         <p>输入newman查看可使用命令参数。</p>
@@ -55,6 +57,9 @@ export default {
     },
      getusers(){
       window.setTimeout("window.open('https://gitee.com/xiaolanyun/DevOps_ApiTest')", 1000);
+    },
+    getwiki(){
+      window.setTimeout("window.open('https://xiaolanyun.github.io/DevOps_wiki/chapter13.html')",1000);
     }
   }
 }

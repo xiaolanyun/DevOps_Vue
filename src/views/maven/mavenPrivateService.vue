@@ -56,7 +56,7 @@ export default{
 // .catch(function (error) {
 // console.log(error);
 // });
-}
+      }
     },
     mounted() {
     //this.requestData("http://192.168.222.128:8081/");

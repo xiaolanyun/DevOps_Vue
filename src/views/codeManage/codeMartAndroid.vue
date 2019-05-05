@@ -14,6 +14,7 @@
       <p>设置销售产品信息、不同商品的信息、处理用户订单（发货）</p>
       <p>1.3、买家（若干）</p>
       <p>用户登录、配置用户属性信息、浏览商品目录、显示商品详情、搜索商品、购买商品、结账、下订单、订单查看</p>
+      <font color="#5CACEE" @click="getwiki">1.4、其他设计详情查看wiki</font>
 
   </div>
 </el-card>
@@ -43,6 +44,9 @@ export default {
     },
       getusers(){
       window.setTimeout("window.open('https://gitee.com/xiaolanyun/XiaoLanYunMart')", 1000);
+    },
+    getwiki(){
+      window.setTimeout("window.open('https://xiaolanyun.github.io/DevOps_wiki/chapter10.html')",1000);
     }
   }
 }

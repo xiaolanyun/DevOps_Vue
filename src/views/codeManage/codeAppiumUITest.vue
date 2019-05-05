@@ -11,6 +11,8 @@
   <br>
   <font size="2">2、工程讲解</font>
   <p><img v-bind:Src="imgSrc2" height="731" width="604px"/></p>
+  <br>
+  <font color="#5CACEE" size="2" @click="getwiki">3、框架使用请查看wiki</font>
   <!-- <br>
   <font size="2">3、框架展示</font>
   <p><img v-bind:Src="imgSrc3" height="1200" width="500px"/></p>
@@ -178,6 +180,9 @@ export default
     getmp4(){
       window.setTimeout("window.open('https://www.bilibili.com/video/av50838305?pop_share=1')",1000);
       window.setTimeout("window.open('https://www.bilibili.com/video/av50838305/?p=2')",1000);
+    },
+    getwiki(){
+      window.setTimeout("window.open('https://xiaolanyun.github.io/DevOps_wiki/chapter11.3.html')",1000);
     }
   },
   // mounted() {

@@ -9,6 +9,8 @@
   <div class="text item">
       <font size="2">1、设计思路</font>
       <p><img v-bind:Src="imgSrc1" height="382" width="1206px"/></p>
+      <br>
+      <font color="#5CACEE" size="2" @click="getwiki">2、框架使用请查看wiki</font>
       <!-- <pre><code>
       adb push framework.jar /sdcard/01test
 
@@ -95,6 +97,9 @@ export default {
     getmp4(){
       window.setTimeout("window.open('https://www.bilibili.com/video/av50838305/?p=7')",1000);
       window.setTimeout("window.open('https://www.bilibili.com/video/av50838305/?p=6')",1000);
+    },
+    getwiki(){
+      window.setTimeout("window.open('https://xiaolanyun.github.io/DevOps_wiki/chapter12.html')",1000);
     }
   }
 }

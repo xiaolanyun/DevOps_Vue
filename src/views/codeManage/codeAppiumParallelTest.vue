@@ -18,6 +18,8 @@
       <br>
       <font size="2">2、工程讲解</font>
       <p><img v-bind:Src="imgSrc2" height="862" width="808px"/></p>
+      <br>
+      <font color="#5CACEE" size="2" @click="getwiki">3、框架使用请查看wiki</font>
       <!-- <p>运行顺序Grid-》appiumA,appiumB</p>
       <p><img v-bind:src="imgSrc1" alt=""></p>
       <font size="2">2.1、启动AppiumGrid服务</font>
@@ -214,6 +216,10 @@ export default {
     getmp4(){
       window.setTimeout("window.open('https://www.bilibili.com/video/av50838305/?p=3')",1000);
       window.setTimeout("window.open('https://www.bilibili.com/video/av50838305/?p=4')",1000);
+    },
+
+    getwiki(){
+      window.setTimeout("window.open('https://xiaolanyun.github.io/DevOps_wiki/chapter11.5.html')",1000);
     }
     
   }
