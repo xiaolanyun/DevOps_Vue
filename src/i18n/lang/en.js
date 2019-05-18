@@ -28,17 +28,16 @@ const en = {
     jenkins: 'continuousIntegration',
     jenkinsMain: 'mainPage',
     jobView: 'jobView',
-    
     sonar: 'sonar',
     sonarQube: 'sonarQube',
 
     falcon: 'systemMonitor',
     openFalcon: 'monitoring',
 
-    wiki:'wiki',
-    gitbookwiki:'gitbookwiki',
+    wiki: 'wiki',
+    gitbookwiki: 'gitbookwiki',
     maven: 'maven',
-    mavenPrivateService: 'mavenPrivateService',
+    mavenPrivateService: 'mavenPrivateService'
 
     // article: 'article',
     // publishArticle: 'publishArticle',
@@ -88,7 +87,7 @@ const en = {
     logout: 'logout'
   },
 
-  ...enLocale   //  合并element-ui内置翻译
+  ...enLocale //  合并element-ui内置翻译
 }
 
 export default en

@@ -86,7 +86,7 @@ export default {
         })
         return false
       } 
-      if(this.loginForm.username === 'admin' && this.loginForm.password === 'xiaolanyun')
+      if(this.loginForm.username === 'visitor' && this.loginForm.password === 'xiaolanyun')
       {
         that.$store.dispatch('setToken', that.loginForm.username).then(() => {
           that.$router.push({path: '/'})
