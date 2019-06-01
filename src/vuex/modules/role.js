@@ -9,7 +9,7 @@ export default {
       // 省略 axios 请求代码 通过 token 向后台请求用户权限等信息，这里用假数据赋值
       state.info = {
         role: 'superAdmin',
-        permissions: '超级管理员'
+        permissions: '游客'
       }
       sessionStorage.setItem('info', JSON.stringify(store.getters.info))
     },

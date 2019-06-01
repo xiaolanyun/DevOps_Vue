@@ -10,7 +10,8 @@
         <li>
           <langSelect></langSelect>
         </li>
-        <li>{{ $t(`role.${this.$store.getters.info.role}`) }}</li>
+        <!-- <li>{{ $t(`role.${this.$store.getters.info.role}`) }}</li> -->
+        <li>普通游客</li>
         <li>
           <el-dropdown @command="handleCommand">
                   <span class="el-dropdown-link">
